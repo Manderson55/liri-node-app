@@ -1,0 +1,25 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "Node HW",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manderson55/liri-node-app.git"
+  },
+  "keywords": [
+    "liri"
+  ],
+  "author": "Mariela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Manderson55/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/Manderson55/liri-node-app#readme",
+  "dependencies": {
+    "inquire": "^0.4.8"
+  }
+}
