@@ -1,7 +1,12 @@
 var fs = require("fs");
 var Twitter = require("twitter");
-var twitterKeysArray = require("./keys.js");
 
+//----------------------------------------------------------------
+
+var twitterKeysArray = require("./keys.js");
+var log = require("./log.js");
+
+//----------------------------------------------------------------
   
 function getTweets() {
 var	  consumerKey = '',
@@ -27,7 +32,8 @@ for (var key in twitterKeysList) {
         accessTokenSecret = twitterKeysList[key];
         break;
     default:
-    console.log("Couldn't find that key");
+    console.log("Couldn't find the Twitter Key");
+    log.writeToLog("Couldn't find the Twitter Key")
 
   } 
 }
@@ -45,14 +51,21 @@ var parameters = {screen_name: "mzaVenezuela",
 
 twitterAccount.get('statuses/user_timeline', parameters, function(error, tweets, response) {
   if (error) {
-  	console.log("error encountered! ")   
+  	console.log("error encountered! ");
+    log.writeToLog("Couldn't connect to Twitter!");   
   } else {
+
+      console.log("Author: " + tweets[0].user.name);
+      log.writeToLog("Author: " + tweets[0].user.name);
 
       for (var x = 0; x < tweets.length; x++) {     
           console.log("Tweet #" + (x+1) + ":");
+          log.writeToLog("Tweet #" + (x+1) + ":");
           console.log("Date Posted: " + tweets[x].created_at);
+          log.writeToLog("Date Posted: " + tweets[x].created_at);
           console.log("Tweet: " + tweets[x].text);
-          console.log("Author: " + tweets[x].user.name);
+          log.writeToLog("Tweet: " + tweets[x].text);
+
       } 
   }
 

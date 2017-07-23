@@ -1,5 +1,11 @@
 var inquirer = require('inquirer');
 
+//-------------------------------------------------------------------------------
+
+var log = require("./log.js");
+
+//-------------------------------------------------------------------------------
+
 function movieThis(){
 
     var movieSelected = "";
@@ -21,7 +27,7 @@ function movieThis(){
          callOMDBapi(movieSelected);
       }
       else {
-        console.log("user selected " + inquirerResponse.movie);
+
         movieSelected = inquirerResponse.movie;
         callOMDBapi(movieSelected);
       }
@@ -45,10 +51,29 @@ function callOMDBapi(movieSelected){
 
     request("http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&tomatoes=true&apikey=40e9cece", function(error, response, body) {
 
-      if (!error && response.statusCode === 200) {
-          console.log( movieSelected + '\n Title: ' + JSON.parse(body).Title + '\n Year Released: ' + JSON.parse(body).Year + '\n IMDB Rating: ' + JSON.parse(body).imdbRating + '\n Country it was Released: ' + JSON.parse(body).Country + '\n Language: ' + JSON.parse(body).Language + '\n Plot: ' + JSON.parse(body).Plot + '\n Actors: ' + JSON.parse(body).Actors + '\n Rotten Tomatoes URL: ' + JSON.parse(body).tomatoURL );
-
+      if (error) {
+        log.writeToLog("error ocurred calling the callOMDBapi!");
       }
+      else {
+        if (response.statusCode === 200) {
+            console.log( movieSelected + '\n Title: ' + JSON.parse(body).Title + 
+                                         '\n Year Released: ' + JSON.parse(body).Year + 
+                                         '\n IMDB Rating: ' + JSON.parse(body).imdbRating + 
+                                         '\n Country it was Released: ' + JSON.parse(body).Country + 
+                                         '\n Language: ' + JSON.parse(body).Language + 
+                                         '\n Plot: ' + JSON.parse(body).Plot + 
+                                         '\n Actors: ' + JSON.parse(body).Actors + 
+                                         '\n Rotten Tomatoes URL: ' + JSON.parse(body).tomatoURL );
+            log.writeToLog(movieSelected + '\n Title: ' + JSON.parse(body).Title + 
+                                         '\n Year Released: ' + JSON.parse(body).Year + 
+                                         '\n IMDB Rating: ' + JSON.parse(body).imdbRating + 
+                                         '\n Country it was Released: ' + JSON.parse(body).Country + 
+                                         '\n Language: ' + JSON.parse(body).Language + 
+                                         '\n Plot: ' + JSON.parse(body).Plot + 
+                                         '\n Actors: ' + JSON.parse(body).Actors + 
+                                         '\n Rotten Tomatoes URL: ' + JSON.parse(body).tomatoURL );
+          }
+        }
     });
 } // end function callOMDBapi
 

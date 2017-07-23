@@ -1,0 +1,63 @@
+
+ Liri's command is Spotify a song
+Beauty and the Beast
+ Artist: Ariana Grande
+ Preview Song: null
+ Album: La Bella y La Bestia (Banda Sonora Original en Español)
+
+ Liri's command is Spotify a song
+Once Upon a December (from Anastasia)
+ Artist: Emile Pandolfi
+ Preview Song: https://p.scdn.co/mp3-preview/66e2fc1fd743df032dee81bf4a66f915b6b4dca6?cid=6e4f3f6178c740e9a4934a0728a661c2
+ Album: Believe
+
+ Liri's command is Tell me about the movie
+Frozen
+ Title: Frozen
+ Year Released: 2013
+ IMDB Rating: 7.5
+ Country it was Released: USA
+ Language: English, Icelandic
+ Plot: When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+ Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+ Rotten Tomatoes URL: http://www.rottentomatoes.com/m/frozen_2013/
+
+ Liri's command is Do this for me
+Random request was: spotify-this-song -  I Want it That Way
+I Want It That Way
+ Artist: Backstreet Boys
+ Preview Song: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=6e4f3f6178c740e9a4934a0728a661c2
+ Album: The Hits--Chapter One
+
+ Liri's command is Get my tweets
+Author: Mariela Z Anderson
+Tweet #1:
+Date Posted: Fri Jul 21 21:16:59 +0000 2017
+Tweet: RT @NTN24ve: "Voto o plomo": La amenaza a los empleados públicos para que voten en la Constituyente de Maduro https://t.co/tartQOXvrS
+Tweet #2:
+Date Posted: Fri Jul 21 21:16:49 +0000 2017
+Tweet: RT @NTN24ve: La Comisión de Venecia denuncia carencias en la Constituyente de Maduro https://t.co/XbdSzFeiCC https://t.co/4i2leMszkv
+Tweet #3:
+Date Posted: Fri Jul 21 21:16:35 +0000 2017
+Tweet: RT @NTN24ve: 200 mil personas habrían participado en el simulacro de la Constituyente, según actas filtradas https://t.co/9xU1jG2Hi9 https:…
+Tweet #4:
+Date Posted: Tue Jul 18 03:04:21 +0000 2017
+Tweet: @marcorubio #YoSoyVenezuela #SOSVenezuela Help the Venezuelan people restore Democracy
+Tweet #5:
+Date Posted: Tue Jul 18 03:02:39 +0000 2017
+Tweet #6:
+Tweet: @realDonaldTrump #YoSoyVenezuela The People of Venezuela spoke! Please make sure their voices are heard and respected!
+Date Posted: Tue Jul 18 02:58:43 +0000 2017
+Tweet: #YoSoyVenezuela https://t.co/FQRGRc3qSO
+Tweet #7:
+Date Posted: Tue Jul 18 02:36:01 +0000 2017
+Tweet: #YoSoyVenezuela https://t.co/bZJSnWDpue
+Tweet #8:
+Date Posted: Tue Jul 18 02:34:43 +0000 2017
+Tweet: #YoSoyVenezuela https://t.co/wpUpqtdgXJ
+Tweet #9:
+Date Posted: Tue Jul 18 02:34:18 +0000 2017
+Tweet: #YoSoyVenezuela #SOSVenezuela https://t.co/Yc2S7poTy3
+Tweet #10:
+Date Posted: Tue Jul 18 02:33:13 +0000 2017
+Tweet: #YoSoyVenezuela https://t.co/XuxSU3TmFw
